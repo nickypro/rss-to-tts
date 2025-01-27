@@ -68,14 +68,18 @@ def process_articles(rss_url):
             continue
         print("Processing:", audio_path, "...")
         text = article["clean_article"]
-        blocks = combine_blocks(split_text(text), max_chars=400)
+        audio = tts.generate_default(text)
+        audio.stream_to_file(audio_path)
 
-        combined_audio = np.array([])  # Initialize empty array
-        for b in tqdm(blocks):
-            audio, out_ps = tts.generate_default(b)
-            combined_audio = np.concatenate([combined_audio, audio])  # Add each new audio to combined
+        #blocks = combine_blocks(split_text(text), max_chars=400)
 
-        sf.write(audio_path, combined_audio, 24000)    
+        #combined_audio = np.array([])  # Initialize empty array
+        #for b in tqdm(blocks):
+        #    #audio, out_ps = tts.generate_default(b)
+        #    audio = tts.generate_default(text)
+        #    combined_audio = np.concatenate([combined_audio, audio])  # Add each new audio to combined
+
+        # sf.write(audio_path, combined_audio, 24000)    
 
     # Second loop - update file timestamps
     from email.utils import parsedate_to_datetime
