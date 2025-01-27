@@ -1,12 +1,11 @@
 import feedparser
 
 # URL of the RSS feed
-rss_url = 'https://www.bitsaboutmoney.com/archive/rss/'
 
 # Parse the RSS feed
 
 # Loop through the entries and print the titles
-def get_entries(feed_url, verbose=False):
+def get_entries(rss_url, verbose=False):
     feed = feedparser.parse(rss_url)
 
     articles = []
@@ -24,6 +23,7 @@ def get_entries(feed_url, verbose=False):
     return articles
 
 if __name__ == "__main__":
+    rss_url = 'https://www.bitsaboutmoney.com/archive/rss/'
     get_entries(rss_url, verbose=True)
 
 

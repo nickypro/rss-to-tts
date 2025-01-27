@@ -13,7 +13,10 @@ os.makedirs("./articles", exist_ok=True)
 os.makedirs("./audio", exist_ok=True)
 
 # Fetch articles from the RSS feed
-rss_url = 'https://www.bitsaboutmoney.com/archive/rss/'
+#rss_url  = 'https://www.bitsaboutmoney.com/archive/rss/'
+#save_dir = "./audio/bits-about-money"
+rss_url = "https://biostasis.substack.com/feed"
+save_dir = "./audio/biostasis-standard"
 articles = get_rss.get_entries(rss_url)
 
 def process_articles(rss_url):
@@ -62,8 +65,8 @@ def process_articles(rss_url):
 
 
     for article in articles:
-        audio_path = f"./audio/bits-about-money/{article['safe_title']}.mp3"
-        if os.path.exists(file_path):
+        audio_path = f"{save_dir}/{article['safe_title']}.mp3"
+        if os.path.exists(audio_path):
             print("Exists:", audio_path)
             continue
         print("Processing:", audio_path, "...")
