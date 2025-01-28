@@ -17,6 +17,7 @@ os.makedirs("./audio", exist_ok=True)
 #save_dir = "./audio/bits-about-money"
 rss_url = "https://biostasis.substack.com/feed"
 save_dir = "./audio/biostasis-standard"
+os.makedirs(save_dir, exist_ok=True)
 articles = get_rss.get_entries(rss_url)
 
 def process_articles(rss_url):
@@ -48,22 +49,6 @@ def process_articles(rss_url):
         print(article["title"])
         print("-" * 40)  # Separator for readability
 
-    def split_text(some_text):
-        # splits by . ! ? : ; \n\n
-        regex = r'[^.!?:;\n]+(?:[.!?:;]|\n\n)' 
-        return re.findall(regex, some_text)
-
-    def combine_blocks(blocks, max_chars=400):
-        result, current = [], ""
-        for b in blocks:
-            if len(current + b) > max_chars:
-                result.append(current)
-                current = b
-            else:
-                current = current + b
-        return result + [current]
-
-
     for article in articles:
         audio_path = f"{save_dir}/{article['safe_title']}.mp3"
         if os.path.exists(audio_path):
@@ -73,16 +58,6 @@ def process_articles(rss_url):
         text = article["clean_article"]
         audio = tts.generate_default(text)
         audio.stream_to_file(audio_path)
-
-        #blocks = combine_blocks(split_text(text), max_chars=400)
-
-        #combined_audio = np.array([])  # Initialize empty array
-        #for b in tqdm(blocks):
-        #    #audio, out_ps = tts.generate_default(b)
-        #    audio = tts.generate_default(text)
-        #    combined_audio = np.concatenate([combined_audio, audio])  # Add each new audio to combined
-
-        # sf.write(audio_path, combined_audio, 24000)    
 
     # Second loop - update file timestamps
     from email.utils import parsedate_to_datetime
