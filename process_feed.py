@@ -7,6 +7,7 @@ from tqdm import tqdm
 import get_rss
 import parse_text
 import tts
+import parallel
 
 # Ensure the articles directory exists
 os.makedirs("./articles", exist_ok=True)
@@ -49,15 +50,18 @@ def process_articles(rss_url):
         print(article["title"])
         print("-" * 40)  # Separator for readability
 
-    for article in articles:
+    def tts_article(article):
         audio_path = f"{save_dir}/{article['safe_title']}.mp3"
         if os.path.exists(audio_path):
             print("Exists:", audio_path)
-            continue
+            return None
         print("Processing:", audio_path, "...")
         text = article["clean_article"]
         audio = tts.generate_default(text)
         audio.stream_to_file(audio_path)
+        return audio
+
+    audios = parallel.process_in_parallel(articles, tts_article)
 
     # Second loop - update file timestamps
     from email.utils import parsedate_to_datetime
