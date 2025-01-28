@@ -55,11 +55,15 @@ def process_articles(rss_url):
         if os.path.exists(audio_path):
             print("Exists:", audio_path)
             return None
-        print("Processing:", audio_path, "...")
-        text = article["clean_article"]
-        audio = tts.generate_default(text)
-        audio.stream_to_file(audio_path)
-        return audio
+
+        with tqdm(total=1, desc=f"Processing {article['safe_title']}", unit="article",
+                 bar_format="{desc}: {elapsed}") as pbar:
+            text = article["clean_article"]
+            audio = tts.generate_default(text)
+            audio.stream_to_file(audio_path)
+            pbar.update(1)
+            pbar.set_description(f"Completed {article['safe_title']}")  # Update description when done
+            return audio
 
     audios = parallel.process_in_parallel(articles, tts_article)
 
