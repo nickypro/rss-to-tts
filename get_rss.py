@@ -18,7 +18,13 @@ def get_entries(rss_url, verbose=False):
 
         if verbose:
             print(title)
-        articles.append({"title": title, "text": article, "published": entry.published})
+        articles.append({
+            "title": title,
+            "text": article,
+            "published": entry.published,
+            "url": entry.links[0].href,
+            "links": entry.links,
+        })
 
     return articles
 

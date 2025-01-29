@@ -31,5 +31,5 @@ if __name__ == "__main__":
     print("type of response", type(response))
 
     # Save audio as MP3
-    response.stream_to_file("output.mp3")
+    response.stream_to_file("./data/output.mp3")
 

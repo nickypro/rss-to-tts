@@ -1,0 +1,16 @@
+{
+    "feeds": [
+        {
+            "slug": "biostasis",
+            "feed_name": "Biostasis Podcast",
+            "rss_url": "https://biostasis.substack.com/feed",
+            "save_dir": "./data/audio/biostasis"
+        },
+        {
+            "slug": "bits-about-money",
+            "feed_name": "Bits About Money",
+            "rss_url": "https://www.bitsaboutmoney.com/archive/rss/",
+            "save_dir": "./data/audio/bits-about-money"
+        }
+    ]
+}
