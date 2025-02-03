@@ -1,5 +1,5 @@
-import get_rss
-import parse_text
+import rss_to_tts.get_rss as get_rss
+import rss_to_tts.parse_text as parse_text
 
 rss_url = 'https://www.bitsaboutmoney.com/archive/rss/'
 articles = get_rss.get_entries(rss_url)

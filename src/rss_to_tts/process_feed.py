@@ -4,10 +4,10 @@ import json
 import sqlite3
 from datetime import datetime
 
-import get_rss
-import parse_text
-import tts
-import parallel
+import .get_rss as get_rss
+import .parse_text as parse_text
+import .tts as tts
+import .parallel as parallel
 
 # Ensure the articles directory exists
 os.makedirs("./data", exist_ok=True)

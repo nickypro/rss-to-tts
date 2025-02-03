@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from parallel import exponential_backoff, process_in_parallel
+from .parallel import exponential_backoff, process_in_parallel
 
 load_dotenv("./env")
 

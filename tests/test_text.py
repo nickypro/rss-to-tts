@@ -61,7 +61,7 @@ That is the typical end to a debanking story. “And then, I opened a new accoun
 
 Immigrant communities keep lists of which banks most want their business. So does the community of people who run small software businesses online. And so, while immigrants and small software companies deal with substantially more banking friction than the typical American working for Google or a university does, they are both very bankable.
 
-Consider crypto entrepreneurs who have received an offer of investment of several million dollars. One might be able to hold the ideas in one mind simultaneously that a) there is some diversity of life experiences in that group but b) on average though, they are very socially advantaged, when considered on most of the usual axes. Despite those substantial advantages, it has been persuasively alleged that their companies and the entrepreneurs themselves routinely suffer debanking. 
+Consider crypto entrepreneurs who have received an offer of investment of several million dollars. One might be able to hold the ideas in one mind simultaneously that a) there is some diversity of life experiences in that group but b) on average though, they are very socially advantaged, when considered on most of the usual axes. Despite those substantial advantages, it has been persuasively alleged that their companies and the entrepreneurs themselves routinely suffer debanking.
 
 I also understand this to be true, in large part downstream of one risk factor that they hit more than almost all legal businesses of comparable scale and sophistication. There have been times and places where this challenge made crypto firms almost unbankable to the extent banks knew what they were doing. And it directly drives decisions against crypto founders and employees.
 
@@ -201,7 +201,7 @@ So what happens if one calls one's bank and says “I opened an app on my phone.
 
 That button will, some steps later, mechanically cause Metropolitan to transfer back some money to Voyager’s now aggrieved customer, which (importantly) Voyager did not actually have to distribute, because it was in bankruptcy. Whose balance sheet did it come off of, then? Metropolitan’s. Their shareholders had just performed the sacred duty of equity: taking the credit loss so that depositors didn’t have to.
 
-If you are banking a quickly growing financial services firm which has large daily funds flows, and charging small per-transaction fees and/or earning net interest on deposits, the total amount of money at risk (within the chargeback or reversal window) as of time T can be vastly larger than the total revenue charged for services at all times 0 through T inclusive. A handwavy approximation for it: number of days in the relevant chargeback/dispute window times average daily transaction volume times dispute percentage. (This will be in the low to high tens of percent. It depends on many factors, including the sophistication of your customer base, whether well-informed guides to consumer rights in banking go viral within it, and similar.) 
+If you are banking a quickly growing financial services firm which has large daily funds flows, and charging small per-transaction fees and/or earning net interest on deposits, the total amount of money at risk (within the chargeback or reversal window) as of time T can be vastly larger than the total revenue charged for services at all times 0 through T inclusive. A handwavy approximation for it: number of days in the relevant chargeback/dispute window times average daily transaction volume times dispute percentage. (This will be in the low to high tens of percent. It depends on many factors, including the sophistication of your customer base, whether well-informed guides to consumer rights in banking go viral within it, and similar.)
 
 And thus banks are very selective with respect to what financial services firms they bank. Because one blowing up, just one, can sink the entire related business line.
 
@@ -209,7 +209,7 @@ Voyager and Metropolitan ended up asking the court to change the rules of the AC
 
 Metropolitan, of course, got sued over the whole Voyager fracas. A major aspect of the lawsuit: Voyager intimated to customers that they would be covered by FDIC insurance and so their funds on deposit were safe. Voyager’s CEO has alleged that Metropolitan’s management suggested this selling point. Voyager’s marketing department published objectively false statements regarding FDIC coverage. “[FDIC coverage] means that in the rare event your USD funds are compromised due to the company or our banking partner’s failure, you are guaranteed a full reimbursement (up to $250,000).”
 
-Marketing departments frequently misunderstand fine distinctions here, which is why, at well-operated financial technology firms, Legal does not let marketing write one single word about FDIC insurance without their sign-off. The fateful two words above are “the company”: FDIC insurance does not and has never backstopped the obligations of non-insured clients of the banking system. It only backstops the obligations of insured financial institutions. (Had Metropolitan failed, Voyager’s customers may have had recourse to FDIC insurance, but Metropolitan did not fail.) 
+Marketing departments frequently misunderstand fine distinctions here, which is why, at well-operated financial technology firms, Legal does not let marketing write one single word about FDIC insurance without their sign-off. The fateful two words above are “the company”: FDIC insurance does not and has never backstopped the obligations of non-insured clients of the banking system. It only backstops the obligations of insured financial institutions. (Had Metropolitan failed, Voyager’s customers may have had recourse to FDIC insurance, but Metropolitan did not fail.)
 
 And so the FDIC has not paid Voyager’s customers one thin dime, nor will it ever. It has neither obligation nor legal authority to do so.
 
@@ -217,7 +217,7 @@ The FDIC is institutionally very opposed to fraudulently inducing customers to t
 
 Metropolitan then ceased crypto banking. Several banks which had major or incipient crypto practices ceased crypto banking roughly contemporaneously.
 
-Was Metropolitan within its rights to do so? Ab-so-lutely. 
+Was Metropolitan within its rights to do so? Ab-so-lutely.
 
 Was it within its power to not exit crypto banking? Some thumbs were placed on the scale, and Metropolitan acknowledges this, though they probably were not dispositive for Metropolitan specifically. Their incipient crypto business blew up in their face. Heads would likely have rolled in any event.
 
@@ -231,7 +231,7 @@ Anyhow, when a crypto founder couldn’t find a bank in 2011, one could be excus
 
 Some advocates consider this unfair. Sure, sure, there was some… cowboy behavior in the early days, but that’s just the price of innovation. The freaks and geeks are always on the cutting edge of technology, and well, you know, I suppose they might not always listen to lawyers. But the early days are basically over. We bring something completely new to the table. We are responsible professionals with a compliance-first mindset. We are thoroughly committed to working with partners in finance and government to assuage all concerns. We have impeccable pedigrees. We say all the right things, in all the right accents. We are capable of hiring lobbyists, making campaign contributions, and engaging in a considered media strategy, too!
 
-Some chill felt is caused by the long shadow of SBF 
+Some chill felt is caused by the long shadow of SBF
 Much has been written about Sam Bankman-Fried and his co-conspirators and enablers. That story remains extensively misunderstood and undercovered relative to its importance.
 
 SBF et al orchestrated a sequential privilege escalation attack on the system that is the United States of America, via consummate skill at understanding how power works, really works, in the United States. They rooted trusted institutions and used each additional domino’s weight against the next. A full recounting of the political strategy alone could easily fill a book. The forfeiture allegations fill 26 printed pages at 1-2 lines per targeted politician. The United States has also alleged that he tried to buy the Bahamas.
@@ -250,7 +250,7 @@ In hindsight, I overrated the competence in several important domains, and total
 
 Anyhow, Tether’s current most important bagman is Howard Lutnik, who may be stepping back from the position, as he’s currently leading Trump’s transition team and has his eyes on bigger prizes. Forget MicroStrategy’s high implied volatility. Lutnik convertible arb would be the trade of the century.
 
-Some crypto advocates believe it’s unfair to tar the industry with the SBF brush, for either industry internal reasons (“He was CeFi not true DeFi, and tried to force the rest of us along with it! Nuts to him!”) or political reasons (“Not my side of the aisle! Salami, you said? Never heard of him neither!”) 
+Some crypto advocates believe it’s unfair to tar the industry with the SBF brush, for either industry internal reasons (“He was CeFi not true DeFi, and tried to force the rest of us along with it! Nuts to him!”) or political reasons (“Not my side of the aisle! Salami, you said? Never heard of him neither!”)
 
 Here we are again at the tension between a) democracies should practice careful consideration of individuals on their merits and reject collective punishment but b) the political system shouldn’t have the memory span of a squirrel.
 
@@ -277,7 +277,7 @@ But the FDIC had to be persuaded into that point of view, by a cadre of very tal
 
 The Department of Justice had a legal theory, which it was quite proud of. The Financial Institutions Reform, Recovery, and Enforcement Act of 1989 (FIRREA) gives the DOJ a hunting license for any fraud (and many other crimes) which affects a federally insured financial institution. FIRREA was passed after the savings and loan crisis, to protect small financial institutions from peril and thereby avoid another crisis.
 
-Now your common sense understanding might be “Oh, Congress probably intended on cracking down on fraud targeting banks which, I don’t know, was big enough to imperil a small community institution? I could see a really large fraudulent bank loan imperiling a small bank. And checking the history books, there were some wildly fraudulent bank loans mixed up in the S&L crisis. OK, so we federalized prosecution of defrauding a bank like that? Sounds reasonable.” 
+Now your common sense understanding might be “Oh, Congress probably intended on cracking down on fraud targeting banks which, I don’t know, was big enough to imperil a small community institution? I could see a really large fraudulent bank loan imperiling a small bank. And checking the history books, there were some wildly fraudulent bank loans mixed up in the S&L crisis. OK, so we federalized prosecution of defrauding a bank like that? Sounds reasonable.”
 
 If you have that intuition, you are apparently not creative enough to have worked as a lawyer in the Obama admin DOJ. No, their thought was that if you provide rails which facilitate fraud, such as giving a fraudster a bank account, you are affecting a financial institution: yourself. And so, the DOJ can go after you, for self-harm. Note that you do not need to lose money, oh no, the DOJ can also go after you because the way you affected yourself was to cause your regulator to like you less. When you settle with the DOJ, it will extract an enforceable promise in writing that you will stop your campaign of self-harm, and also stop banking specifically enumerated industries, like payday loans.
 
@@ -366,7 +366,7 @@ They do not evince attention to detail or familiarity with the procedural histor
 
 As we’ve established, almost all banks consider crypto businesses to be high-risk, and avoid them. There was a small cadre of banks which had active crypto practices. Those banks purported, to the public and their regulators, to have the EDD required to bank them compliantly. This was incredibly operationally useful for crypto, for one very obvious reason (substantially every business needs a bank account) and one less obvious one.
 
-Crypto talks a great game about decentralization, but centralized systems are more efficient than decentralized systems. When riding banking rails, making transfers outside of regular banking hours (which have five twos of uptime) is difficult. This exposes firms to risk and acts as a constant cost of capital. 
+Crypto talks a great game about decentralization, but centralized systems are more efficient than decentralized systems. When riding banking rails, making transfers outside of regular banking hours (which have five twos of uptime) is difficult. This exposes firms to risk and acts as a constant cost of capital.
 
 Crypto trades 24/7. Crypto firms would like to settle crypto trades, particularly between stablecoins and the USD backing them, 24/7. Crypto’s solution to this was to all bank at the same bank, Silvergate, which I described (with some surprise, when they IPOed) as the First National Bank of Crypto.
 
@@ -374,11 +374,11 @@ Silvergate had a particular product called the Silvergate Exchange Network (SEN)
 
 This was particularly important for stablecoin issuers, like Circle, which issues USDC. Circle’s main custodial bank for USDC was SVB. Circle wanted to be able to issue marketmakers like DRW and Alameda Research hundreds of millions of USDC 24/7 at any hour on any day with no more than a few minutes of latency, or redeem USDC for greenbacks in a similar fashion.
 
-Now, a thing you will frequently see in fintech banking, and which is not itself at all inappropriate, is a fintech having multiple banks with a division of labor. One of those banks might agree to have a fintech’s customer-facing high-velocity low-EOD-balance transactional activity. And one of those banks might agree to have a fintech’s low-velocity high-EOD-balance deposits. These are very different business propositions for the banks! They imply different risks, different core competencies, and different revenue opportunities. 
+Now, a thing you will frequently see in fintech banking, and which is not itself at all inappropriate, is a fintech having multiple banks with a division of labor. One of those banks might agree to have a fintech’s customer-facing high-velocity low-EOD-balance transactional activity. And one of those banks might agree to have a fintech’s low-velocity high-EOD-balance deposits. These are very different business propositions for the banks! They imply different risks, different core competencies, and different revenue opportunities.
 
 If you are running businesses which both a) have high daily inflows and outflows and also b) want to keep billions of dollars in the regulated banking perimeter, you very much need partners comfortable with both halves.
 
-The argument you make, as a fintech, to the bank with your deposit business is that the other bank is also a competent, U.S.-regulated financial institution, with good AML and KYC controls (among others). Therefore, when your business makes one wire at the end of the day to settle up with its omnibus account at that bank, netting over several hundred thousand customer transactions, perhaps for several hundred million dollars, your bank should be comfortable, even if it has very little exact knowledge about what happened today. 
+The argument you make, as a fintech, to the bank with your deposit business is that the other bank is also a competent, U.S.-regulated financial institution, with good AML and KYC controls (among others). Therefore, when your business makes one wire at the end of the day to settle up with its omnibus account at that bank, netting over several hundred thousand customer transactions, perhaps for several hundred million dollars, your bank should be comfortable, even if it has very little exact knowledge about what happened today.
 
 Probably the same story as yesterday, and tomorrow, and Compliance can sleep the sleep of the righteous, because their trusted peers have an appropriate degree of controls in place. The bank custodying the money mountain is thus certainly not aiding and abetting money laundering. It can rely on the second bank’s own surveillance and controls, in addition to the crypto firm’s compliance department. There will be many formal contractual promises and informal verbal or written assurances made about this. And this works and serious people can accept it but the factual probity of the high-velocity transactional bank is extremely load-bearing.
 
@@ -436,7 +436,7 @@ Some regulators are disclosure regulators. The SEC comes to mind. Some regulator
 
 Does the FDIC have statutory authority to pick magic numbers? Yes, in the political system of the United States, it does, and it can cite that authority to you at length. The FAA has statutory authority to pick magic numbers for bolt torque. The FDA has statutory authority to pick magic numbers for permissible flow rates for ketchup.
 
-Are regulators overreaching here? Not obviously so! Look at the above description of Operation Choke Point and their theory of regulatory authority there. It requires magical thinking to connect banking a payday lender, reputational risk, a run on your bank, and endangering the deposit insurance fund. It very much does not require magical thinking to think that crypto deposits are flighty, correlated, and could cause a run! We were experiencing actual crypto-induced runs! 
+Are regulators overreaching here? Not obviously so! Look at the above description of Operation Choke Point and their theory of regulatory authority there. It requires magical thinking to connect banking a payday lender, reputational risk, a run on your bank, and endangering the deposit insurance fund. It very much does not require magical thinking to think that crypto deposits are flighty, correlated, and could cause a run! We were experiencing actual crypto-induced runs!
 
 A reasonable argument can be made that the problem with regulators was not abuse of discretion. It was needing to pay for past regulatory mistakes and/or missed opportunities with overcorrection following substantial consumer harm. Examiners (stunningly) missed that Silvergate’s new business model, which they had IPOed on the strength of, had materially changed from its days as a sleepy two-branch real estate bank! That reasonable argument has been alluded to… by the Federal Reserve! See Findings, pg 2.
 
@@ -462,7 +462,7 @@ A heuristic I have long used, as a once-upon-a-time debater: if one side is impr
 
 Or, if you want, you can bet on their former executives. Their former CTO (after being Chief Operations Officer), who is also the CEO’s son, has a Twitter account. You can find his side of the story on it. For a bank executive he is remarkably cavalier with characterizing the contents of communications from his regulators.
 
-For example, he writes “The Sunday after Thanksgiving in 2022, regulators went after 5 banks simultaneously[.] Up to that point the regulators were not objecting, Silvergate brought them along, and suddenly everything changed[.]” 
+For example, he writes “The Sunday after Thanksgiving in 2022, regulators went after 5 banks simultaneously[.] Up to that point the regulators were not objecting, Silvergate brought them along, and suddenly everything changed[.]”
 
 In fact, in April 2022, Silvergate had received a Matters Requiring Immediate Attention (MRIA) from the Federal Reserve specifically concerning the adequacy of its BSA/AML monitoring program. They received a similar MRIA in November, but by that time, they were cooked. See SEC complaint, para 80, substantially confirming representations made in a deposition by “Former Employee 5” (a Compliance official) in this lawsuit, which explicitly allege MRIAs. A MRIA, as distinct from a Matters Requiring Attention (MRA; a formalized supervisory directive which they expect you to pay substantial attention to in the ordinary course of business), is a drop-everything-and-fix-immediately command.
 
@@ -506,9 +506,9 @@ Should we allow government to close banks? Yes.
 
 Reasonable people can disagree as to the thresholds that extraordinary remedy should require and the procedural form it should take.
 
-If we were still on debate team, you might ask me for a concession “Government needs to specifically admit that Silvergate was intentionally closed” and I’d counter “Sure, will trade you: opposition needs to concede that Silvergate was actively aware including at the executive level that Alameda and North Dimension were intentionally receiving incoming FTX customer funds flows.” About fifteen minutes later, I think neither side is thrilled, both sides learned something they find edifying, and there probably exists mutual agreement that either Silvergate had to go. or in the alternative Absent extraordinary government support, Silvergate was doomed after the FTX fiasco. 
+If we were still on debate team, you might ask me for a concession “Government needs to specifically admit that Silvergate was intentionally closed” and I’d counter “Sure, will trade you: opposition needs to concede that Silvergate was actively aware including at the executive level that Alameda and North Dimension were intentionally receiving incoming FTX customer funds flows.” About fifteen minutes later, I think neither side is thrilled, both sides learned something they find edifying, and there probably exists mutual agreement that either Silvergate had to go. or in the alternative Absent extraordinary government support, Silvergate was doomed after the FTX fiasco.
 
-Complaints that Signature Bank did not need to be placed in receivership 
+Complaints that Signature Bank did not need to be placed in receivership
 
 Carter believes Signature was targeted in an analogous fashion. In part this is in reliance on their board member Barney Frank, who maintained (in media interviews contemporaneous with the collapse, and after it) that Signature was solvent and had sufficient liquidity at the end of a week which had seen a bank run.
 
@@ -518,7 +518,7 @@ That context refreshed, let’s review where Signature believed its business was
 
 Signature experienced difficulties telling a plausible story involving numbers which added up  (pg 35) that weekend. Quoting that postmortem:
 
-Signature needed to provide reliable and realistic data, particularly concerning immediately available liquidity and ongoing deposit withdrawals, to inform the analysis the Regulators and Signature needed to perform to understand the Bank’s liquidity position. Once Signature began providing any data on these key issues, the Regulators found the data was inconsistent and that it continuously changed in material ways. 
+Signature needed to provide reliable and realistic data, particularly concerning immediately available liquidity and ongoing deposit withdrawals, to inform the analysis the Regulators and Signature needed to perform to understand the Bank’s liquidity position. Once Signature began providing any data on these key issues, the Regulators found the data was inconsistent and that it continuously changed in material ways.
 
 Signature execs, et al, were on a series of conference calls with regulators for an entire weekend. They began with regulators taking note of the bank run and candidly announcing the bank was in mortal peril. Signature proceeded, in the regulators’ view, to confabulate about liquidity sources, composition and quality of assets, and current withdrawal requests pending, through either malfeasance or spectacularly poorly timed technical incompetence. Regulators felt that, at this pivotal moment, Signature was dangerously disconnected with reality, like an executive describing the weekend as (this is a quote) “uneventful thus far.”
 
@@ -544,14 +544,14 @@ We are not required to believe your napkins, Signature, if they contain obvious 
 
 The most critical question for Signature’s liquidity position was “How much money will customers wire out on Monday?” This is straightforward banking, which regulators pressed them to do all weekend: a) sum up how much money customers have asked for on Monday, in the hundreds of current pending wire requests b) project a worst case scenario for how that number will evolve, as more customers put in wire requests, before Monday morning.
 
-Here is the time series (taken from above report, pg 40) of those two questions being asked repeatedly in a 48 hour window. Observe how often, a few hours after Signature has made a (new, even-more-worst-than-previous) worst case scenario, the known wire requests have already exceeded that worst case scenario. 
+Here is the time series (taken from above report, pg 40) of those two questions being asked repeatedly in a 48 hour window. Observe how often, a few hours after Signature has made a (new, even-more-worst-than-previous) worst case scenario, the known wire requests have already exceeded that worst case scenario.
 
 Signature then communicated a new worst case scenario, which felicitously was only as far away from known wire requests as their previous worst case scenario had been, almost as if they were learning nothing from repeatedly being wrong.
 
 This played out multiple times.
 
 
-Signature believes it understood where it was that weekend. The above picture is almost proof positive that it did not. They also understood their experience of the weekend to be signaling how the worst was over. 
+Signature believes it understood where it was that weekend. The above picture is almost proof positive that it did not. They also understood their experience of the weekend to be signaling how the worst was over.
 
 Quoting postmortem again (pg 6):
 
@@ -593,7 +593,7 @@ Some crypto advocates would prefer to have screen real estate in community banki
 
 Some politicians exercised extraprocedural influence
 
-Some readers might remember Libra, Facebook’s attempt at creating a (substantially) worldwide economic network with a token which was variously described as a USD stablecoin or perhaps some sort of currency basket. Libra was a consortium project, with Facebook as the de facto anchor and a number of industry partners. (Stripe, my former employer, was a consortium member at one time. I reiterate the above disclaimer that they do not necessarily endorse things I say in my personal spaces.) 
+Some readers might remember Libra, Facebook’s attempt at creating a (substantially) worldwide economic network with a token which was variously described as a USD stablecoin or perhaps some sort of currency basket. Libra was a consortium project, with Facebook as the de facto anchor and a number of industry partners. (Stripe, my former employer, was a consortium member at one time. I reiterate the above disclaimer that they do not necessarily endorse things I say in my personal spaces.)
 
 Libra did not live to see the light of day. Some time later the project was abandoned by Facebook and the technology was sold. It sold to Silvergate, back when Silvergate felt like despite the stupendous growth in the core business, sure, it had managerial attention to devote to M&A, what else would bank management possibly find to fill its time?
 
@@ -632,13 +632,13 @@ So yeah, that’s what the naked exercise of power looks like. And yeah, it happ
 I will say one positive thing about the Senators writing the letter: they were sufficiently proud of their work that they posted a contemporaneous press release with the full text. Transparency is not dispositive proof of virtue. The extraprocedural threat is right there in the text. But a democracy should naturally prefer transparency, and for political decisions to be made by elected officials, over secret decisions by people who will, even in the event of extraordinary malfeasance, still have a job, a pension, and power after the inquiry.
 
 The CFPB
-Andreessen also claimed (to Rogan) that Senator Warren created the Consumer Financial Protection Bureau and that its purview is doing, quote, “Whatever [she] wants.” 
+Andreessen also claimed (to Rogan) that Senator Warren created the Consumer Financial Protection Bureau and that its purview is doing, quote, “Whatever [she] wants.”
 
 … Yeah, that’s pretty much my read, too.
 
 I agree with some of their substantive positions and disagree with others, but it seems like a cadre of young, ambitious acolytes who understand their founder’s vision and are eager to implement it. I’ve been orbiting Silicon Valley for a long time and know the type of organization. I didn’t realize official Washington also had them. I am insufficiently politically aware to name another agency in Washington which demonstrates such a pronounced founder effect.
 
-The CFPB’s interaction with debanking, however? De minimis. 
+The CFPB’s interaction with debanking, however? De minimis.
 
 The CFPB wrote a position paper against it. I expect people sympathetic to the CFPB to use that position paper as political/PR armor against their opponents, who are banging the drum about the broader debanking issue.
 
@@ -735,7 +735,7 @@ Since software is eating the world, you can buy a product from any of a number o
 
 This will allow you to decrease customer and employee friction in many of your product lines, while having a responsive answer to your bank examiner when they ask about your PEP program. The other parts of your PEP program will be dreadfully boring. You will write a procedure which says that e.g. that if news reporting or facts available the bank cause it to understand an existing customer to be newly a PEP (or uncover previously missed PEPness), this will trigger a review of their account relationship, which you would duly document. Then, you would add them to your EDD process for PEPs.
 
-EDD for PEPs is (bottom line here) going to require someone to write a quarterly memo saying “Uneventful quarter. The $1.2 million incoming wire was sale of private residence. We commissioned an appraisal (attached) and, based on comps, seems reasonable. Account holder’s title to property confirmed via title search (attached); it substantially predates most recent election. No other items of note.” 
+EDD for PEPs is (bottom line here) going to require someone to write a quarterly memo saying “Uneventful quarter. The $1.2 million incoming wire was sale of private residence. We commissioned an appraisal (attached) and, based on comps, seems reasonable. Account holder’s title to property confirmed via title search (attached); it substantially predates most recent election. No other items of note.”
 
 And that’s all you need to know about PEPs.
 
@@ -857,7 +857,7 @@ But sometimes there is an agenda. “You’ve got an agenda!” is sometimes use
 
 Agendas are frequently published, much more frequently than they are secretly swapped in back rooms. Telling people what you want is a necessary step in getting what you want. Talking about the agenda is really useful for coordinating support for the agenda.
 
-Crypto, like any industry, has people with a diversity of views in it. But one can’t losslessly describe the world without being the world, and some lossy models are still useful. 
+Crypto, like any industry, has people with a diversity of views in it. But one can’t losslessly describe the world without being the world, and some lossy models are still useful.
 
 I have taken the liberty of writing a compressed version of what crypto wants, for the benefit of readers who might not geek out on this stuff. If you’d prefer hearing it from them directly, out of concern I’m being unfair, see this thread. Alternatively, you can read the writings of the advocates already namechecked, or spend a few days digesting the policy papers of their lobbyists.
 
@@ -916,13 +916,14 @@ Want more essays in your inbox?
 I write about the intersection of tech and finance, approximately biweekly. It's free.
 
 Your name
- 
+
 your@email.com
  Get a biweekly email
 Data & privacy Contact
 © 2021-2025 Kalzumeus Software, LLC
 """
 
-from parse_text import get_completion
+from rss_to_tts.parse_text import get_completion
 
 print( get_completion(text) )
+
