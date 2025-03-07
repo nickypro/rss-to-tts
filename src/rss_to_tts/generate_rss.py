@@ -1,8 +1,11 @@
+# %%
 import sqlite3
 import os
 from xml.etree import ElementTree as ET
+from datetime import datetime
 
 DB_PATH = os.environ.get("DB_NAME") or "./data/db.sqlite"
+BASE_URL = os.environ.get("BASE_URL") or "https://rss.nicky.pro/"
 
 def generate_rss_feed(slug, db_path=None, base_dir="./data"):
     if db_path is None:
@@ -48,12 +51,32 @@ def generate_rss_feed(slug, db_path=None, base_dir="./data"):
         else:
             relative_audio_path = audio_path
 
+        online_audio_path = BASE_URL + relative_audio_path
+
         item = ET.SubElement(channel, 'item')
         ET.SubElement(item, 'title').text = title
         ET.SubElement(item, 'link').text = link
-        ET.SubElement(item, 'description').text = description
+        # Create a description with a "Read more" link in HTML format
+        description_with_link = f"{description}<br/><br/><a href='{link}'>Read more...</a>"
+        ET.SubElement(item, 'description').text = description_with_link
 
-        pub_date_str = published if isinstance(published, str) else str(published)
+        # Format the published date in RFC 822 format for podcast compatibility
+        if isinstance(published, str):
+            try:
+                # Try to parse the string into a datetime object
+                pub_date = datetime.strptime(published, '%Y-%m-%d %H:%M:%S')
+                pub_date_str = pub_date.strftime('%a, %d %b %Y %H:%M:%S %z')
+            except ValueError:
+                # If parsing fails, use the string as is
+                pub_date_str = published
+        else:
+            # If it's already a datetime object
+            try:
+                pub_date_str = published.strftime('%a, %d %b %Y %H:%M:%S %z')
+            except AttributeError:
+                # Fallback if it's neither a string nor a datetime
+                pub_date_str = str(published)
+
         ET.SubElement(item, 'pubDate').text = pub_date_str
 
         # Calculate file size (assumes the file exists)
@@ -63,7 +86,7 @@ def generate_rss_feed(slug, db_path=None, base_dir="./data"):
         except OSError:
             file_length = 0
         ET.SubElement(item, 'enclosure',
-                      url=relative_audio_path,
+                      url=online_audio_path,
                       length=str(file_length),
                       type='audio/mpeg')
 
@@ -93,3 +116,4 @@ if __name__ == "__main__":
     for slug in feed_slugs:
         print(f"Generating RSS for feed: {slug}")
         generate_rss_feed(slug)
+# %%

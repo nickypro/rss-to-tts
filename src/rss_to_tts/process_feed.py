@@ -9,6 +9,7 @@ from . import parse_text
 from . import tts
 from . import parallel
 
+LOCAL_TTS = True
 
 # Ensure the articles directory exists
 os.makedirs("./data", exist_ok=True)
@@ -61,14 +62,14 @@ def process_feed(feed_config):
 
     # Fetch new articles
     articles = get_rss.get_entries(feed_config['rss_url'])
+    print(f"Found {len(articles)} articles")
     save_dir = feed_config['save_dir']
     os.makedirs(save_dir, exist_ok=True)
 
     for article in articles:
         # Check if article exists
         c.execute("SELECT id FROM articles WHERE url = ?", (article['url'],))
-        if c.fetchone() is not None:
-            continue
+        article_id = c.fetchone()
 
         # Get paths
         safe_title = "".join(c if c.isalnum() else "_" for c in article['title'].strip())
@@ -93,18 +94,38 @@ def process_feed(feed_config):
         # Generate audio
         if not os.path.exists(audio_path):
             print(f"Processing audio {audio_path} ...")
-            audio = tts.generate_default(clean_article)
-            audio.stream_to_file(audio_path)
+            if LOCAL_TTS:
+                from . import tts_local
+                import soundfile as sf
+                audio, out_ps = tts_local.generate_default(clean_article)
+                sf.write(audio_path, audio, 24000)
+
+            else:
+                audio = tts.generate_default(clean_article)
+                audio.stream_to_file(audio_path)
         else:
             print(f"Audio exists {audio_path}")
 
         # Insert article
         pub_date = datetime.strptime(article['published'], '%a, %d %b %Y %H:%M:%S %Z')
-        c.execute("""INSERT INTO articles
-                     (feed_id, title, first_1k, url, article_path, audio_path, published)
-                     VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                  (feed_id, article['title'], first_1k, article['url'],
-                   article_path, audio_path, pub_date))
+
+        # Set the audio file's modification time to match publication date
+        if os.path.exists(audio_path):
+            try:
+                pub_date_timestamp = pub_date.timestamp()
+                os.utime(audio_path, (pub_date_timestamp, pub_date_timestamp))
+                print(f"Updated file timestamp for {audio_path}")
+            except Exception as e:
+                print(f"Error setting timestamp: {e}")
+
+        if article_id is None:
+            c.execute("""INSERT INTO articles
+                         (feed_id, title, first_1k, url, article_path, audio_path, published)
+                         VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                      (feed_id, article['title'], first_1k, article['url'],
+                       article_path, audio_path, pub_date))
+        else:
+            print(f"Article already exists {article['url']}")
 
     conn.commit()
     conn.close()

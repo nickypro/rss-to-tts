@@ -1,4 +1,5 @@
 {
+    "base_url": "https://rss.nicky.pro",
     "feeds": [
         {
             "slug": "biostasis",
@@ -11,6 +12,18 @@
             "feed_name": "Bits About Money",
             "rss_url": "https://www.bitsaboutmoney.com/archive/rss/",
             "save_dir": "./data/audio/bits-about-money"
+        },
+        {
+            "slug": "eu-ai-act",
+            "feed_name": "The EU AI Act Newsletter",
+            "rss_url": "https://artificialintelligenceact.substack.com/feed",
+            "save_dir": "./data/audio/eu-ai-act"
+        },
+        {
+            "slug": "aella",
+            "feed_name": "Aella",
+            "rss_url": "https://aella.substack.com/feed",
+            "save_dir": "./data/audio/aella"
         }
     ]
 }
