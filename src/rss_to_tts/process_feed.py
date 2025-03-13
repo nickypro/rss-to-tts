@@ -61,7 +61,7 @@ def process_feed(feed_config):
     feed_id = c.fetchone()[0]
 
     # Fetch new articles
-    articles = get_rss.get_entries(feed_config['rss_url'])
+    articles = get_rss.get_entries(feed_config['rss_url'], feed_config=feed_config)
     print(f"Found {len(articles)} articles")
     save_dir = feed_config['save_dir']
     os.makedirs(save_dir, exist_ok=True)
@@ -83,7 +83,7 @@ def process_feed(feed_config):
                 clean_article = f.read()
         else:
             print(f"Parsing article {article_path}...")
-            clean_article = parse_text.get_parallel(article["text"])
+            clean_article = parse_text.get_parallel(article["text"], model=feed_config.get("custom_model", None))
 
         first_1k = clean_article[:1000]
 
