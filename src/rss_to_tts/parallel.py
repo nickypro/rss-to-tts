@@ -1,5 +1,6 @@
 import time
 import concurrent.futures
+from tqdm import tqdm
 
 def exponential_backoff(func, max_retries=5, initial_delay=1, backoff_factor=2):
     """
@@ -28,10 +29,13 @@ def process_in_parallel(items, process_func, max_workers=10):
     Returns a list of results in the same order as input.
     """
     results = [None] * len(items)
+    pbar = tqdm(total=len(items), desc="Processing items")
 
     def process_item(item, index):
         try:
-            return index, process_func(item)
+            ans = process_func(item)
+            pbar.update(1)
+            return index, ans
         except Exception as e:
             print(f"Error processing item {index}: {e}")
             return index, None
@@ -44,4 +48,5 @@ def process_in_parallel(items, process_func, max_workers=10):
             if result is not None:
                 results[idx] = result
 
+    pbar.close()
     return results
