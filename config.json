@@ -24,6 +24,12 @@
             "feed_name": "Aella",
             "rss_url": "https://aella.substack.com/feed",
             "save_dir": "./data/audio/aella"
+        },
+        {
+            "slug": "pap",
+            "feed_name": "Progress and Poverty",
+            "rss_url": "https://progressandpoverty.substack.com/feed",
+            "save_dir": "./data/audio/pap"
         }
     ]
 }

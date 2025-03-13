@@ -1,6 +1,9 @@
 import sqlite3
 import pandas as pd
 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+
 def print_feeds(db_name="./data/db.sqlite"):
     conn = sqlite3.connect(db_name)
     c = conn.cursor()
